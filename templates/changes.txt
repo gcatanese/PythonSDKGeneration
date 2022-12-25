@@ -1,0 +1,4 @@
+## configuration.mustache
+
+renaming Configuration to MgmtConfiguration
+set API_KEY from env variable
