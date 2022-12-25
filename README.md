@@ -1,7 +1,10 @@
 # PythonSDKGeneration
-Prototyping Adyen Python SDK generation from OpenAPI file using [python-nextgen](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/python-nextgen) generator.
+Prototyping Adyen Python SDK generation from OpenAPI file using [python-nextgen](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/python-nextgen) generator.  
+Built using OpenAPI Generator v6.3.0-SNAPSHOT
 
-This is built using OpenAPI Generator v6.3.0-SNAPSHOT
+<p align="center">
+<b>Note: this is not the official Adyen Python SDK</b>
+</p>
 
 ## Code generation
 
