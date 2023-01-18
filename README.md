@@ -34,6 +34,8 @@ Run the demo and choose the operation to perform
 
 ## How to use Python Management API 
 
+### Get API credential details
+
 ```python
     configuration = openapi_client.MgmtConfiguration()
 
@@ -49,4 +51,27 @@ Run the demo and choose the operation to perform
         except Exception as e:
             print("Exception when calling MyAPICredentialApi->get_me: %s\n" % e)
 
+```
+
+### Create Merchant Webhook
+```python
+    configuration = openapi_client.MgmtConfiguration()
+
+    with openapi_client.ApiClient(configuration) as api_client:
+
+        api_instance = openapi_client.WebhooksMerchantLevelApi(api_client)
+
+        try:
+            api_response = api_instance.post_merchants_merchant_id_webhooks(
+                merchant_id=os.environ.get("MERCHANT_ACCOUNT"),
+                create_merchant_webhook_request=
+                CreateMerchantWebhookRequest(
+                    type="standard",
+                    url="https://example.cpm",
+                    active=False,
+                    communicationFormat="JSON"))
+            print("The response of WebhooksMerchantLevelApi->create:\n")
+            pprint(api_response)
+        except Exception as e:
+            print("Exception when calling WebhooksMerchantLevelApi->create: %s\n" % e)
 ```
