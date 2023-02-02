@@ -15,7 +15,7 @@ Generate Python code:
 ```
 java -jar /projects/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar generate \
    -i ManagementService-v1.json \
-   -g ./python-nextgen \
+   -g python-nextgen \
    -t ./templates \ 
    -o ./mgmt_api
 ```
